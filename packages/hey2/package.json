@@ -1,0 +1,13 @@
+{
+  "name": "hey2",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "shared": "^1.0.0"
+  }
+}
