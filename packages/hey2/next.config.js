@@ -3,4 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+const withTM = require("next-transpile-modules")(["shared"]);
+
+module.exports = withTM(nextConfig)
