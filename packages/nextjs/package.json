@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "shared": "^1.0.0"
+    "shared": "^1.0.0",
+    "framer-package": "^1.0.0"
   }
 }
