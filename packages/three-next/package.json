@@ -1,0 +1,25 @@
+{
+  "name": "three-next",
+  "version": "2.0.0",
+  "authors": [
+    "Renaud ROHLINGER <https://twitter.com/onirenaud>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "yarn prettier && yarn eslint",
+    "eslint": "next lint --fix --dir src",
+    "prettier": "prettier -l \"./src/**/*.{js,jsx,md}\"",
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "export": "EXPORT=true next build && EXPORT=true next export",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "shared": "^1.0.0"
+  }
+}
