@@ -8,7 +8,7 @@
     "bootstrap": "npm install; lerna bootstrap;",
     "package:admin": "lerna run --scope admin --stream dev",
     "package:users": "lerna run --scope users --stream dev",
-    "package:hey2": "lerna run --scope hey2 --stream dev",
+    "package:nextjs": "lerna run --scope nextjs --stream dev",
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build"
   },
