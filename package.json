@@ -6,10 +6,8 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "npm install; lerna bootstrap;",
-    "package:admin": "lerna run --scope admin --stream dev",
-    "package:users": "lerna run --scope users --stream dev",
     "package:nextjs": "lerna run --scope nextjs --stream dev",
-    "package:framer-package": "lerna run --scope framer-package --stream serve",
+    "package:shared": "lerna run --scope shared --stream serve",
     "start": "run-p --print-label package:*",
     "build": "lerna run --parallel build"
   },

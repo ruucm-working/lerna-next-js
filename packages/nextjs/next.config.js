@@ -3,6 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-const withTM = require("next-transpile-modules")(["shared", "framer-package"]);
+const withTM = require("next-transpile-modules")(["shared"]);
 
 module.exports = withTM(nextConfig)

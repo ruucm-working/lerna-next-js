@@ -1,14 +1,14 @@
 {
   "name": "shared",
   "version": "1.0.0",
-  "description": "",
   "main": "src/index.tsx",
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "yarn; node esmbuild/esmbuild serve ./src 8000",
+    "build": "yarn; node esmbuild/esmbuild build ./src dist",
+    "deploy": "yarn version; git push --tags; git push",
+    "release": "yarn run build; mkdir -p release; cp -Rf dist release/$npm_package_name@$npm_package_version"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "shared": "^1.0.0"
+  }
 }

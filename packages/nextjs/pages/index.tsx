@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 // import { Button } from 'shared';
-import { Icon, Button, MotionButton } from 'framer-package'
+import { Icon, Button, MotionButton } from 'shared'
 
 const Home: NextPage = () => {
   return (
